@@ -21,7 +21,7 @@ public class Ex01RestController {
 	@RequestMapping("/4")
 	public Person objectResponse() {  // json을 내부적으로 만들어냄 key,value형태로 알아서 만들어줌
 		Person person = new Person();
-		person.setName("서혜련");
+		person.setName("서혜련"); // setName, setAge 메소드로 > return시 json형태로
 		person.setAge(25);
 		
 		return person;
